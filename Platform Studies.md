@@ -15,7 +15,7 @@ APIs (Application Programming Interfaces) are great for accessing and gathering 
 
 ### Wikipedia
 
-- Being not a platform in the srtict sense of the concept Wikipedia nevertheless constitutes a vivid project and community with build in archiving since MediaWiki – the software Wikipedia runs on – tracks all changes to any page on Wikipedia. The Wikimedia foundation provides various data dumps (mostly on a monthly basis) to all language editions of Wikipedia. The [Wikimedia Downloads](https://dumps.wikimedia.org/) page provides links to the most recent data dumps of active Wikis as well as to data dumps to discontintued Wikis.
+- Being not a platform in the srtict sense of the concept Wikipedia nevertheless constitutes a vivid project and community with a build in "history" because MediaWiki – the software Wikipedia runs on – tracks all changes to any page on Wikipedia. The Wikimedia foundation provides various data dumps (mostly on a monthly basis) to all language editions of Wikipedia. The [Wikimedia Downloads](https://dumps.wikimedia.org/) page provides links to the most recent data dumps of active Wikis as well as to data dumps to discontintued Wikis.
 
 
 ### Github
