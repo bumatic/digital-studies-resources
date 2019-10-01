@@ -39,7 +39,7 @@
 - Software:
 	- Early versions of PowerPoint (1.0, 2.0, 3.x, 4.x and 95(7.0)) available at [WinWorld](https://winworldpc.com/product/powerpoint/10)
 
-
+	
 ### Further Historical Source Code Releases @ CHM
 
 - [MacPaint and QuickDraw Source Code \| @CHM Blog | Computer History Museum](https://www.computerhistory.org/atchm/macpaint-and-quickdraw-source-code/)
