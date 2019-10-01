@@ -16,6 +16,13 @@
 	- [Hackastory Tools](https://tools.hackastory.com/)
 	- [DIRT Diigital Research Tools](https://dirtdirectory.org/)
 
-## Programming Tutorials and Resources
+## Digital Reyearch (including Programming) Tutorials and Resources
+
 - [Stack Overflow](https://stackoverflow.com/)
 - [Programming Historian](https://programminghistorian.org/)
+- Digital Research Skills for Media Studies Worksheets created by Fernando vander Vlist and Anne Helmond:
+	- [Index (providing a general overview of existing worksheets)](bit.ly/msrw-index)
+	- [Reference Worksheet I: Data Management](bit.ly/msrw-1)
+	- [Reference Worksheet II: Reference Management](bit.ly/msrw-2)
+	- [Reference Worksheet III: Data Visualisation](bit.ly/msrw-3)
+
