@@ -20,7 +20,9 @@
 	- The Wayback Machine itself is a great starting point for accessing historic web resources and doing historic research with and of the web. 
 	- The Digital Methods Initiative provides two research tools: [Internet Archive Wayback Machine Link Ripper](https://tools.digitalmethods.net/beta/internetArchiveWaybackMachineLinkRipper/) ([Tutorial](https://www.youtube.com/watch?v=DVa2TBhp4a4)) and the [Wayback Network per Year](https://tools.digitalmethods.net/beta/waybackNetworkPerYear/). 
 - [Archives Unleashed Toolkit](https://archivesunleashed.org/)
-- The [International Internet Preservation Consortium](http://netpreserve.org/) maintains a website with an extensive list of [tools and software](http://netpreserve.org/web-archiving/tools-and-software/) for creating and interacting with web archives. 
+- The [International Internet Preservation Consortium](http://netpreserve.org/) maintains a website with an extensive list of [tools and software](http://netpreserve.org/web-archiving/tools-and-software/) for creating and interacting with web archives. The tools listed are not just aimed at researchers, but archivists as well.
+- Netlab provides a list of [tools and tutorials](https://www.netlab.dk/services/tools-and-tutorials/) aimed mainly at researcher.
+- [List of web archiving tools](https://guides.lib.vt.edu/webarchiving/tools) maintained by Virginia Tech Library.
 
 
 ## Projects
