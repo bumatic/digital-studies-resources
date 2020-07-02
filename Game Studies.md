@@ -5,7 +5,7 @@
 - [Game Studies - The International Journal of Computer Game Research](http://gamestudies.org/2001)
 
 ## Games
-- [Archive.org archive of MS-DOS Games](https://bit.ly/3eeV9py)
+- [Archive.org archive of MS-DOS Games](https://archive.org/details/softwarelibrary_msdos_games?and[]=emulator_start:*iafix*&sin=&sort=-publicdate)
 
 ## Praxis/Game Design
 - [Game Mechanic Explorer - Code examples for basic game mechanics](https://gamemechanicexplorer.com/#)
