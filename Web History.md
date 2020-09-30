@@ -10,12 +10,18 @@
 - Besides the Internet Archive a number of other web archives are publicly available. This GitHub [webrecorder/public-web-archives](https://github.com/webrecorder/public-web-archives) aims at provinding an overview of existing public web archives. Another resource is the [List of Web archiving initiatives](https://en.wikipedia.org/wiki/List_of_Web_archiving_initiatives).
 
 
+## Usenet
+- [Usenet Newsgroups](https://en.wikipedia.org/wiki/Usenet) are available on: 
+	- [Google Groups](https://groups.google.com/) with an easy web interface
+	- [Usenet Historical Collection](https://archive.org/details/usenethistorical) as mbox mailbox files
+- FAQs were commonly written and circulated to describe the topics of specific newsgroups. They can be found in the above mentioned archives. Another source is the mirror of the [rtfm.mit.edu ftp server](http://cdimage.debian.org/mirror/archive/ftp.sunet.se/pub/usenet/rtfm.mit.edu/).
+
+
 ## Self-Archiving
 - [Webrecorder.io](https://webrecorder.io/) provides a platform as well as stand alone software archiving webpages. Instructions on using the Webrecorder can be found on the tools [help page](https://guide.webrecorder.io/) as well as in the video tutorials published in [Webrecorder's YouTube channel](https://www.youtube.com/channel/UC6FvYcMnfuBYg2_u7HrNDow).
 
 
 ## Tools
-
 - [Wayback Machine](https://archive.org/web/):
 	- The Wayback Machine itself is a great starting point for accessing historic web resources and doing historic research with and of the web. 
 	- The Digital Methods Initiative provides two research tools: [Internet Archive Wayback Machine Link Ripper](https://tools.digitalmethods.net/beta/internetArchiveWaybackMachineLinkRipper/) ([Tutorial](https://www.youtube.com/watch?v=DVa2TBhp4a4)) and the [Wayback Network per Year](https://tools.digitalmethods.net/beta/waybackNetworkPerYear/). 
