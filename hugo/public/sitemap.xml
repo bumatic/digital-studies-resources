@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/docs/</loc>
+    <lastmod>2018-11-28T15:14:39+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/10-software-studies/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/20-platform-studies/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/30-digital-methods/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/40-web-history/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/50-game-studies/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/70-critical_algorithm_studies/computer-vision/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/60educational-resources/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-11-28T15:14:39+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+  </url>
+  
+</urlset>
