@@ -24,7 +24,7 @@ summary: dm.
 	- [Hackastory Tools](https://tools.hackastory.com/)
 	- [DIRT Diigital Research Tools](https://dirtdirectory.org/)
 
-## Digital Reyearch (including Programming) Tutorials and Resources
+## Digital Research Tutorials and Resources (including Programming)
 
 - [Stack Overflow](https://stackoverflow.com/)
 - [Programming Historian](https://programminghistorian.org/)

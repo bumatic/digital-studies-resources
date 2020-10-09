@@ -8,23 +8,31 @@
   </url>
   
   <url>
-    <loc>/docs/10-software-studies/</loc>
+    <loc>/docs/10_resources/</loc>
   </url>
   
   <url>
-    <loc>/docs/20-platform-studies/</loc>
+    <loc>/docs/10_resources/software-studies/</loc>
   </url>
   
   <url>
-    <loc>/docs/30-digital-methods/</loc>
+    <loc>/docs/10_resources/platform-studies/</loc>
   </url>
   
   <url>
-    <loc>/docs/40-web-history/</loc>
+    <loc>/docs/10_resources/digital-methods/</loc>
   </url>
   
   <url>
-    <loc>/docs/50-game-studies/</loc>
+    <loc>/docs/10_resources/web-history/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/70-critical_algorithm_studies/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/10_resources/game-studies/</loc>
   </url>
   
   <url>
@@ -32,7 +40,7 @@
   </url>
   
   <url>
-    <loc>/docs/60educational-resources/</loc>
+    <loc>/docs/10_resources/educationsal-resources/</loc>
   </url>
   
   <url>

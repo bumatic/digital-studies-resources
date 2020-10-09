@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo Whisper Docs on Digital Studies Resources</title>
-    <link>/</link>
-    <description>Recent content in Hugo Whisper Docs on Digital Studies Resources</description>
+    <title>Resources on Digital Studies Resources</title>
+    <link>/docs/10_resources/</link>
+    <description>Recent content in Resources on Digital Studies Resources</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/docs/10_resources/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Software Studies</title>
       <link>/docs/10_resources/software-studies/</link>
@@ -50,15 +49,6 @@
       
       <guid>/docs/10_resources/game-studies/</guid>
       <description>dm.</description>
-    </item>
-    
-    <item>
-      <title>Computer Vision</title>
-      <link>/docs/70-critical_algorithm_studies/computer-vision/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/70-critical_algorithm_studies/computer-vision/</guid>
-      <description>cv.</description>
     </item>
     
     <item>

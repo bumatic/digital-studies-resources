@@ -1,5 +1,5 @@
 languageCode = "en-us"
-title = "Digital Studies Resources"
+title = "Digital Studies"
 
 baseURL = "/"
 themesDir = "themes"
@@ -20,30 +20,35 @@ summaryLength = 30
     weight = 1
 
 [[menu.main]]
-    name = "Docs"
-    url = "/docs/"
+    name = "Resources"
+    url = "/resources/"
     weight = 2
 
 [params]
   google_analytics_id=""
-  homepage_button_link = '/docs'
-  homepage_button_text = 'Read The Docs'
-  homepage_intro = 'Whisper is a documentation theme built with Hugo. The design and functionality is intentionally minimal.'
-  homepage_image = '/images/terminal.gif'
+  homepage_button_link = '/resources'
+  homepage_button_text = 'Go to Resources'
+  homepage_intro = ''
+  #homepage_image = '/images/terminal.gif'
+
+  # (Optional, default docs) Specify root page to render child pages as menu.
+  # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
+  # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
+  Section = 'resources'
 
   ## You can enable to add anchor links to header elements
   # enable_anchor_link = true
 
   [params.homepage_meta_tags]
-    meta_description = "Hugo Whisper is a documentation theme built with Hugo."
-    meta_og_title = "Hugo Whisper Theme"
-    meta_og_type = "website"
-    meta_og_url = "https://hugo-whisper.netlify.app"
-    meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-whisper-theme/master/images/tn.png"
-    meta_og_description = "Hugo Whisper is a documentation theme built with Hugo."
+    #meta_description = "Hugo Whisper is a documentation theme built with Hugo."
+    #meta_og_title = "Hugo Whisper Theme"
+    #meta_og_type = "website"
+    #meta_og_url = "https://hugo-whisper.netlify.app"
+    #meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-whisper-theme/master/images/tn.png"
+    #meta_og_description = "Hugo Whisper is a documentation theme built with Hugo."
     meta_twitter_card = "summary"
-    meta_twitter_site = "@zerostaticio"
-    meta_twitter_creator = "@zerostaticio"
+    meta_twitter_site = "@bumatic"
+    meta_twitter_creator = "@bumatic"
 
   [params.logo]
       mobile = "/images/logo-mobile.svg"

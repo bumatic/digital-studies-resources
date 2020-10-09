@@ -1,6 +1,6 @@
 ---
-title: 'Hugo Whisper Docs'
+title: 'Digital Studies'
 date: 2018-11-28T15:14:39+10:00
 ---
 
-Whisper is a documentation theme built with Hugo. The design and functionality is intentionally minimal. 
+This website contains a growing collection of resources for the study of digital cultures. You can contribute to this website on [Github](https://github.com/bumatic/digital-studies-resources). Just fork the repository, add content, and create a pull request. 
