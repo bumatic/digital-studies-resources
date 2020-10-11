@@ -28,15 +28,13 @@ jobs:
           #pwd
           #hugo version
           
-
       - name: Deploy
-        working-directory: ./hugo
         uses: peaceiris/actions-gh-pages@v3
+        working-directory: ./hugo
         with:
           personal_token: ${{ secrets.TOKEN }}
           external_repository: bumatic/digital-studies-xyz-live  
           publish_dir: ./public
-          #   keep_files: true
           user_name: bumatic
           user_email: marcus.burkhardt@gmail.com
           publish_branch: master
