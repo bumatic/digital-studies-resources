@@ -24,12 +24,13 @@ jobs:
         # remove --minify tag if you do not need it
         # docs: https://gohugo.io/hugo-pipes/minification/
         #working-directory: ./hugo
+        # -b https://www.digital-studies.xyz
         run: |
           ls
           cd hugo
           pwd
           ls
-          hugo --minify -b www.digital-studies.xyz
+          hugo --debug 
           #pwd
           #hugo version
           

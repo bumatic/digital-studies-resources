@@ -9,15 +9,15 @@
   {{ block "meta_tags" . }}{{end}}
   <link rel="icon" href="{{ "favicon.png" | absURL}}">
 
-    {{ if .Site.IsServer }}
+  {{ if .Site.IsServer }}
   {{ $style := resources.Get "/scss/style.scss" | resources.ToCSS (dict "targetPath" "/css/style.css" "enableSourceMap" true) }}
   <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
   {{ else }}
   {{ $style := resources.Get "/scss/style.scss" | resources.ToCSS (dict "targetPath" "/css/style.css" "enableSourceMap" false) }}
   <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
   {{ end }}
-
-
+  
+  
   {{ if .Site.IsServer }}
   {{ $customstyle := resources.Get "/scss/custom.scss" | resources.ToCSS (dict "targetPath" "/css/custom.css" "enableSourceMap" true) }}
   <link rel="stylesheet" href="{{ ($customstyle).RelPermalink }}">
@@ -25,7 +25,7 @@
   {{ $customstyle := resources.Get "/scss/custom.scss" | resources.ToCSS (dict "targetPath" "/css/custom.css" "enableSourceMap" false) }}
   <link rel="stylesheet" href="{{ ($customstyle | minify | fingerprint).RelPermalink }}">
   {{ end }}
-
+  
 
   {{ block "header_css" . }}{{ end }}
 
