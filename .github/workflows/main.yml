@@ -24,10 +24,10 @@ jobs:
         # remove --minify tag if you do not need it
         # docs: https://gohugo.io/hugo-pipes/minification/
         working-directory: ./hugo
-        run: 
+        run: hugo --minify -b www.digital-studies.xyz
           #pwd
           #hugo version
-          hugo --minify -b www.digital-studies.xyz
+          
 
       - name: Deploy
         working-directory: ./hugo
