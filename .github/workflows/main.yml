@@ -19,14 +19,14 @@ jobs:
       - name: Build
         # remove --minify tag if you do not need it
         # docs: https://gohugo.io/hugo-pipes/minification/
-        run: hugo --minify
+        run: hugo -s hugo/ --minify -b www.digital-studies.xyz
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.TOKEN }}
           external_repository: bumatic/digital-studies-xyz-live
-          publish_dir: ./public
+          publish_dir: ./hugo/public
           #   keep_files: true
           user_name: bumatic
           user_email: marcus.burkhardt@gmail.com
