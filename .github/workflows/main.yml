@@ -30,11 +30,11 @@ jobs:
           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        working-directory: ./hugo
+        #working-directory: ./hugo
         with:
           personal_token: ${{ secrets.TOKEN }}
           external_repository: bumatic/digital-studies-xyz-live  
-          publish_dir: ./public
+          publish_dir: ./hugo/public
           user_name: bumatic
           user_email: marcus.burkhardt@gmail.com
           publish_branch: master
