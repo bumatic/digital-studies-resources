@@ -25,16 +25,16 @@ jobs:
         # docs: https://gohugo.io/hugo-pipes/minification/
         working-directory: ./hugo
         run: 
-          pwd
-          hugo version
+          #pwd
+          #hugo version
           hugo --minify -b www.digital-studies.xyz
 
       - name: Deploy
+        working-directory: ./hugo
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.TOKEN }}
-          external_repository: bumatic/digital-studies-xyz-live
-          working-directory: ./hugo
+          external_repository: bumatic/digital-studies-xyz-live  
           publish_dir: ./public
           #   keep_files: true
           user_name: bumatic
