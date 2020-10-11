@@ -17,10 +17,13 @@ jobs:
           hugo-version: "0.75.1"
           extended: true
 
+      - name: Change directory
+        run: cd hugo
+
       - name: Build
         # remove --minify tag if you do not need it
         # docs: https://gohugo.io/hugo-pipes/minification/
-        run: hugo -s ./hugo/ --minify -b www.digital-studies.xyz
+        run: hugo --minify -b www.digital-studies.xyz
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
