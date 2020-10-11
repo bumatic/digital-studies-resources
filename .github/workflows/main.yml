@@ -17,12 +17,13 @@ jobs:
           hugo-version: "0.75.1"
           extended: true
 
-      - name: Change directory
-        run: cd hugo
+      #- name: Change directory
+      #  run: cd hugo
 
       - name: Build
         # remove --minify tag if you do not need it
         # docs: https://gohugo.io/hugo-pipes/minification/
+        working-directory: ./hugo
         run: hugo --minify -b www.digital-studies.xyz
 
       - name: Deploy
@@ -30,7 +31,8 @@ jobs:
         with:
           personal_token: ${{ secrets.TOKEN }}
           external_repository: bumatic/digital-studies-xyz-live
-          publish_dir: ./hugo/public
+          working-directory: ./hugo
+          publish_dir: ./public
           #   keep_files: true
           user_name: bumatic
           user_email: marcus.burkhardt@gmail.com
