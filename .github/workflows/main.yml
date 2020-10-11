@@ -9,9 +9,9 @@ jobs:
 
       #- name: Update theme
         # (Optional)If you have the theme added as submodule, you can pull it and use the most updated version
-        #run: git submodule update --init --recursive
+      #  run: git submodule update --recursive
 
-      - name: Setup hugo
+      - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "0.75.1"
@@ -20,19 +20,20 @@ jobs:
       #- name: Change directory
       #  run: cd hugo
 
-      - name: Build
+      - name: List Directory
+        run: |
+          cd hugo
+          pwd
+
+      - name: Built
         # remove --minify tag if you do not need it
         # docs: https://gohugo.io/hugo-pipes/minification/
         #working-directory: ./hugo
         # -b https://www.digital-studies.xyz
         run: |
-          ls
-          cd hugo
           pwd
-          ls
-          hugo --debug 
-          #pwd
-          #hugo version
+          cd hugo
+          hugo --debug
           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
