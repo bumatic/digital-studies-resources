@@ -10,10 +10,10 @@
   <link rel="icon" href="{{ "favicon.png" | absURL}}">
 
   {{ if .Site.IsServer }}
-  {{ $style := resources.Get "./scss/style.scss" | resources.ToCSS (dict "targetPath" "./css/style.css" "enableSourceMap" true) }}
+  {{ $style := resources.Get "/scss/style.scss" | resources.ToCSS (dict "targetPath" "/css/style.css" "enableSourceMap" true) }}
   <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
   {{ else }}
-  {{ $style := resources.Get "./scss/style.scss" | resources.ToCSS (dict "targetPath" "./css/style.css" "enableSourceMap" false) }}
+  {{ $style := resources.Get "/scss/style.scss" | resources.ToCSS (dict "targetPath" "/css/style.css" "enableSourceMap" false) }}
   <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
   {{ end }}
 
