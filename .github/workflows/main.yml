@@ -6,6 +6,9 @@ jobs:
     steps:
       - name: Git checkout
         uses: actions/checkout@v2
+        with: 
+          submodules: true
+          fetch-depth: 0
 
       #- name: Update theme
         # (Optional)If you have the theme added as submodule, you can pull it and use the most updated version
@@ -25,14 +28,12 @@ jobs:
           cd hugo
           pwd
 
-      - name: Built
+      - name: Build
         # remove --minify tag if you do not need it
         # docs: https://gohugo.io/hugo-pipes/minification/
-        #working-directory: ./hugo
-        # -b https://www.digital-studies.xyz
         run: |
-          pwd
           cd hugo
+          pwd
           hugo --debug
           
       - name: Deploy
