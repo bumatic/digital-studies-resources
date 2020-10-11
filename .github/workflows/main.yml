@@ -34,7 +34,7 @@ jobs:
         run: |
           cd hugo
           pwd
-          hugo --debug
+          hugo --minify
           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -45,5 +45,5 @@ jobs:
           publish_dir: ./hugo/public
           user_name: bumatic
           user_email: marcus.burkhardt@gmail.com
-          publish_branch: master
+          publish_branch: main
         #   cname: example.com
