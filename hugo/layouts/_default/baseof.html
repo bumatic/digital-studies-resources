@@ -9,6 +9,9 @@
   {{ block "meta_tags" . }}{{end}}
   <link rel="icon" href="{{ "favicon.png" | absURL}}">
 
+  {{ printf resources.Get "/scss/style.scss" }}
+
+
   {{ if .Site.IsServer }}
   {{ $style := resources.Get "/scss/style.scss" | resources.ToCSS (dict "targetPath" "/css/style.css" "enableSourceMap" true) }}
   <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
