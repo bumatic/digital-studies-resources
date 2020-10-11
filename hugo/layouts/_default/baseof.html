@@ -19,10 +19,10 @@
 
 
   {{ if .Site.IsServer }}
-  {{ $customstyle := resources.Get "scss/custom.scss" | resources.ToCSS (dict "targetPath" "css/custom.css" "enableSourceMap" true) }}
+  {{ $customstyle := resources.Get "/scss/custom.scss" | resources.ToCSS (dict "targetPath" "/css/custom.css" "enableSourceMap" true) }}
   <link rel="stylesheet" href="{{ ($customstyle).RelPermalink }}">
   {{ else }}
-  {{ $customstyle := resources.Get "scss/custom.scss" | resources.ToCSS (dict "targetPath" "css/custom.css" "enableSourceMap" false) }}
+  {{ $customstyle := resources.Get "/scss/custom.scss" | resources.ToCSS (dict "targetPath" "/css/custom.css" "enableSourceMap" false) }}
   <link rel="stylesheet" href="{{ ($customstyle | minify | fingerprint).RelPermalink }}">
   {{ end }}
 
