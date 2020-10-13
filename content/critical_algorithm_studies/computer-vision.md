@@ -1,7 +1,7 @@
 ---
 title: 'Computer Vision'
 date: 2020-10-08 15:02
-draft: false
+draft: true
 weight: 150
 summary: cv.
 ---

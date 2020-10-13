@@ -1,5 +1,6 @@
 ---
-title: Resources
+title: General
+draft: false
 bookFlatSection: true
 bookCollapseSection: false
 weight: 20

@@ -1,5 +1,6 @@
 ---
 title: Critical Algorithm Studies
+draft: true
 bookFlatSection: true
 bookCollapseSection: false
 weight: 100
