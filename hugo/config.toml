@@ -20,9 +20,11 @@ summaryLength = 30
     weight = 1
 
 [[menu.main]]
-    name = "Resources"
-    url = "/resources/"
-    weight = 2
+#    name = "Resources"
+#    url = "/resources"
+#    weight = 2
+
+    
 
 [params]
   google_analytics_id=""
@@ -32,9 +34,9 @@ summaryLength = 30
   #homepage_image = '/images/terminal.gif'
 
   # (Optional, default docs) Specify root page to render child pages as menu.
-  # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
+  # Page is resolved by .GetPage function: https://gohugo.io/functions/getpage/
   # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
-  Section = 'resources'
+  Section = '/'
 
   ## You can enable to add anchor links to header elements
   # enable_anchor_link = true

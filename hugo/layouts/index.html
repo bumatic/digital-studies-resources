@@ -54,6 +54,16 @@
           </div>
         </div>
         <div class="col-12 col-md-9">
+          <h1 class="title">{{ .Title }}</h1>
+          <div class="content">
+            {{ .Content }}
+          </div>
+
+          {{ range.Pages }}
+          {{ .Render "summary" }}
+          {{ end }}
+
+
           {{ block "main" . }}
           {{ end }}
         </div>
@@ -63,6 +73,10 @@
     {{ block "main" . }}
     {{ end }}
     {{ end}}
+
+    
+
+
   </div>
 
   {{ partial "sub-footer.html" . }}
@@ -80,6 +94,13 @@
 
   {{ partial "google-analytics.html" . }}
 
+
+  <br/>  
+  <!--{{ printf "%#v" . }}-->
+  {{ printf "%#v" .Kind }}
+
 </body>
 
 </html>
+
+

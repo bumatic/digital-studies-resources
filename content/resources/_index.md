@@ -1,5 +1,5 @@
 ---
-title: General
+title: Resources
 draft: false
 bookFlatSection: true
 bookCollapseSection: false

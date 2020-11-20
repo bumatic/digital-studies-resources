@@ -3,7 +3,7 @@ title: 'Software Studies'
 date: 2020-10-08 15:06
 draft: false
 weight: 30
-summary: dm.
+summary: 
 ---
 
 ## Applications
