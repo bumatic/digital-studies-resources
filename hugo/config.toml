@@ -36,7 +36,7 @@ summaryLength = 30
   # (Optional, default docs) Specify root page to render child pages as menu.
   # Page is resolved by .GetPage function: https://gohugo.io/functions/getpage/
   # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
-  Section = '/'
+  Section = '/content/'
 
   ## You can enable to add anchor links to header elements
   # enable_anchor_link = true

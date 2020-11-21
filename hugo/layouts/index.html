@@ -56,16 +56,27 @@
         <div class="col-12 col-md-9">
           <h1 class="title">{{ .Title }}</h1>
           <div class="content">
+            <!--<p>index.html TEMPLATE</p>
+            <p>{{ printf "%#v" .Site.Params.Section }}</p>
+            <p>{{ printf "%#v" .Pages }}</p>-->
+
             {{ .Content }}
           </div>
-
-          {{ range.Pages }}
-          {{ .Render "summary" }}
+          <div class="summary">
+          {{ range .Pages }}
+                {{ if eq .Site.Params.Section .RelPermalink }}
+                    {{ range .Pages }}
+                      
+                      {{ .Render "summary" }}
+                    
+                    {{ end }}
+                    
+                {{ end }}
           {{ end }}
-
 
           {{ block "main" . }}
           {{ end }}
+        </div>
         </div>
       </div>
     </div>
@@ -95,9 +106,9 @@
   {{ partial "google-analytics.html" . }}
 
 
-  <br/>  
-  <!--{{ printf "%#v" . }}-->
-  {{ printf "%#v" .Kind }}
+  <!--<br/>  
+  {{ printf "%#v" . }}
+  {{ printf "%#v" .Kind }}-->
 
 </body>
 
