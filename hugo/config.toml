@@ -24,6 +24,12 @@ summaryLength = 30
 #    url = "/resources"
 #    weight = 2
 
+[[menu.main]]
+    name = "Github"
+    url = "https://github.com/bumatic/digital-studies-resources"
+    weight = 3
+    post = "_blank"
+
     
 
 [params]
@@ -37,6 +43,8 @@ summaryLength = 30
   # Page is resolved by .GetPage function: https://gohugo.io/functions/getpage/
   # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
   Section = '/content/'
+
+  GithubRepo = "github.com/bumatic/digital-studies-resources"
 
   ## You can enable to add anchor links to header elements
   # enable_anchor_link = true
