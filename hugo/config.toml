@@ -61,5 +61,5 @@ summaryLength = 30
     meta_twitter_creator = "@bumatic"
 
   [params.logo]
-      mobile = "/images/logo.svg"
-      standard  = "/images/logo.svg"
+      mobile = "logo.svg"
+      standard  = "logo.svg"
