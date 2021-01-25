@@ -1,5 +1,6 @@
 ---
 title: 'Web History'
+type: resources
 date: 2020-10-08 15:02
 draft: false
 weight: 80

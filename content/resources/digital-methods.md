@@ -1,13 +1,17 @@
 ---
 title: 'Digital Methods'
+type: resources
 date: 2020-10-08 15:02
 draft: false
 weight: 50
+enable_anchor_link: true
 summary: The term “digital methods” does not primarily refer to research methods that make use of digital tools - of course digital methods do that too - but rather a research program that aims “to learn from the so-called method of the medium, that is, how online devices treat web data” (Rogers 2019, 4). At the center is the dictum “follow the medium” (Rogers 2009, 10) to expose the specific methods of digital media on the one hand and to appropriate and repurpose them for new approaches in social research on the other hand. For following the medium and for studying social and cultural transformations grounded in digital media a broad range of research tools have been developed and made available throughout the past decade. 
 ---
 
 
 The term “digital methods” does not primarily refer to research methods that make use of digital tools - of course digital methods do that too - but rather a research program that aims “to learn from the so-called method of the medium, that is, how online devices treat web data” (Rogers 2019, 4). At the center is the dictum “follow the medium” (Rogers 2009, 10) to expose the specific methods of digital media on the one hand and to appropriate and repurpose them for new approaches in social research on the other hand. For following the medium and for studying social and cultural transformations grounded in digital media a broad range of research tools have been developed and made available throughout the past decade. 
+
+{{< table_of_contents >}}
 
 ## Relevant Tool Collections
 
@@ -16,13 +20,14 @@ The term “digital methods” does not primarily refer to research methods that
 
 The [*Digital Methods Initiative*](https://wiki.digitalmethods.net/Dmi/DmiAbout) develops and maintains a broad range of tools that allow for the collection, cleaning, processing, analysis and visualization of data. Most tools are web based and can be used directly. Yet, some require registration (e.g. Issuecrawler, 4Cat) or need to be installed on your local computer or server (e.g. TCAT). The [DMI Tool Database](https://wiki.digitalmethods.net/Dmi/ToolDatabase) groups tools by type of *media analysis*, *data treatment*, *web element*, *device* and *web sphere*. 
 
-Notable tools:
+- Notable tools:
 	- [TCAT](https://github.com/digitalmethodsinitiative/dmi-tcat/): Twitter Capture and Analysis Toolktit
 	- [4CAT](https://4cat.oilab.nl/): developed by [*Open Intelligence Lab*](https://oilab.eu/) in collaboration with DMI.
 	- ... 
 
 
 Tool Website: https://wiki.digitalmethods.net/Dmi/ToolDatabase
+
 Github: https://github.com/digitalmethodsinitiative/
 
 

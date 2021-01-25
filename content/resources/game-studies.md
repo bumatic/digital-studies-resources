@@ -1,5 +1,6 @@
 ---
 title: 'Game Studies'
+type: resources
 date: 2020-10-08 15:05
 draft: false
 weight: 100
