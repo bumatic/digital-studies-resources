@@ -7,8 +7,6 @@ weight: 100
 summary: dm.
 ---
 
-# Game Studies
-
 ## Literature
 - [Digital Games Research Association](http://www.digra.org/)
 - [Game Studies - The International Journal of Computer Game Research](http://gamestudies.org/2001)

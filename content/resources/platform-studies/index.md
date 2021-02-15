@@ -7,8 +7,6 @@ weight: 40
 summary: dm.
 ---
 
-# Platform Studies
-
 ## (Historical) Data on Platforms
 
 APIs (Application Programming Interfaces) are great for accessing and gathering current platform data. A number of projects are dedicated to archiving and publishing historical platform data. 
