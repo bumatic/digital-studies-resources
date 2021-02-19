@@ -1,5 +1,5 @@
 ---
-title: Tools
+title: Projects
 draft: true
 bookFlatSection: true
 bookCollapseSection: false
@@ -8,8 +8,11 @@ summary: This section assembles a list of interesting projects in the area...
 ---
 
 
-## Network Analysis
-- Gephi
+- NFDI4culture, https://nfdi4culture.de/
+- Dariah
+- Clarin
+- Timemachine, https://www.timemachine.eu/
+- 
 
 ## Text Analysis
 - Voyant Tools
