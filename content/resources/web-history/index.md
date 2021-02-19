@@ -7,8 +7,6 @@ weight: 80
 summary: dm.
 ---
 
-# Web History
-
 ## Available Archives
 - The most comprehensive archive of the web ranging back to 1996 is provided by the Internet Archive. Historical web resources are available via the [Wayback Machine](https://archive.org/web/).
 	
