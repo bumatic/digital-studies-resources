@@ -1,0 +1,13 @@
+<div class = "sidebar">
+{{ range .Site.Params.content_paths }}        
+  {{ $current := relURL . | string }}
+    {{ with $.Site.GetPage $current }}
+      <p class="fw-bold mb-2"><span class="dk p-1 ">{{ .Title }}</span></p>
+      <p class="mb-2 lh-lg">
+      {{ range .Pages }}
+        <a class="p-1" href="{{ .URL }}">{{ .Title }}</a> 
+      {{ end }}
+      </p>
+    {{ end }}
+{{end }}
+</div>

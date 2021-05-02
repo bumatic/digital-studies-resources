@@ -4,8 +4,10 @@ type: resources
 date: 2020-10-08 15:02
 draft: false
 weight: 80
-summary: dm.
+summary:  This section contains references to resources, tools, and institutions that might be of interest for scholars studying the history of the web.
 ---
+
+This section contains references to resources, tools, and institutions that might be of interest for scholars studying the history of the web.
 
 ## Available Archives
 - The most comprehensive archive of the web ranging back to 1996 is provided by the Internet Archive. Historical web resources are available via the [Wayback Machine](https://archive.org/web/).

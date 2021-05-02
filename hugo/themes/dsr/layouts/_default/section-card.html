@@ -1,0 +1,19 @@
+<div class="col-12 col-sm-6 col-lg-4 col-xl-3 p-1">
+	<div class="card border-5 0 bg-dark text-primary">
+		{{ if .Params.image }}
+  			<img class="card-image-top" alt="{{ .Title }}" src="{{ .Params.image | relURL }}" />
+  		{{ end}}
+	  <div class="card-body mt-4">
+	    <h1 class="card-title my-auto">{{ .Title }}</h1>
+	    
+	    {{ if .Params.subtitle }}
+		    <h6 class="card-subtitle mb-2 text-muted">{{ .Params.subtitle }}</h6>
+		{{ end }}
+
+	    
+	    <div class="justify-content-end d-grid gap-2 d-flex justify-content-end mt-4">
+	    	<a href="{{ .Permalink }}" class="btn btn-primary stretched-link"></a>
+	    </div>	
+	  </div>
+	</div>
+</div>

@@ -4,8 +4,11 @@ type: resources
 date: 2020-10-08 15:05
 draft: false
 weight: 40
-summary: dm.
+summary:  This section contains references to historical resources, tools, and institutions that might be of interest for scholars studying online platforms, web services and online projects like Twitter, Reddit, Telegram, Wikipedia etc.
 ---
+
+This section contains references to historical resources, tools, and institutions that might be of interest for scholars studying online platforms, web services and online projects like Twitter, Reddit, Telegram, Wikipedia etc. Please see as well the section on digital methods. 
+
 
 ## (Historical) Data on Platforms
 

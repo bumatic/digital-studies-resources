@@ -1,25 +1,19 @@
 ---
-title: Tools
+title: Projects
 draft: true
 bookFlatSection: true
 bookCollapseSection: false
-weight: 25
-summary: This section assembles resources on specific research tools such as Gehpi. 12345
+weight: 100
+summary: A pleathora of projects works on building and providing infrastructures, tools and data for digital studies. This section contains an incomplete list of references to such projects.
 ---
 
 
-## Network Analysis
-- Gephi
 
-## Text Analysis
-- Voyant Tools
-
-
-## Visualization Tools, Visual Analysis
-
-- Palladio. Visualize complex historical data with ease.
-- 
+- NFDI4culture, https://nfdi4culture.de/
+- Dariah
+- Clarin
+- Timemachine, https://www.timemachine.eu/
 
 
-- Tool Lists
+
 

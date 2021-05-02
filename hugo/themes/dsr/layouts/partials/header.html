@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light  py-2 mb-4">
+	<div class="container-fluid mt-2 mt-lg-4 d-flex d-md-none">
+		<div class="d-flex col-12 border-top border-bottom border-dark pt-2 pb-2">
+			<a class="navbar-brand ms-0 d-inline d-md-none" href="{{ .Site.Home.RelPermalink }}">{{  .Site.Title | safeHTML }}</a>
+			<button class="navbar-toggler border-0 ms-4" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav-menu" aria-controls="main-nav-menu" aria-expanded="true" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+	        </button>
+	    </div>
+	    <div class="container-fluid border-bottom border-dark pt-2 pb-2 collapse navbar-collapse" id="main-nav-menu">
+	            <ul class="navbar-nav flex-column w-100 mx-auto" >
+	                {{ $currentPage := . }}
+	                <li class="nav-item menu-item-home ">
+	                	<a class="nav-link text-dark p-0 m-0 fs-4" href="{{ .Site.Home.RelPermalink }}">Home{{ $current := .RelPermalink | safeURL }}
+		                    	{{ if eq $current .Site.Home.RelPermalink }} /{{ end }}</a>
+	                </li>
+	                {{ range .Site.Menus.main }}
+		                <li class="nav-item menu-item-{{ replace .Name " " "-" | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}"> 
+		                    <a class="nav-link text-dark p-0 m-0 fs-4" href="{{ .URL }}" target="{{ .Post }}" title="{{ .Name }}">
+		                        {{ .Name }}{{ $current := .URL | safeURL }}
+		                    	{{ if eq $current $currentPage.RelPermalink }} /{{ end }}
+		                    </a>                 
+		                </li>
+	                {{end}}
+	            </ul>
+        </div>
+	</div>
+	<div class="container-fluid mt-2 mt-lg-4 d-none d-md-flex">
+		<div class="col-0 col-md-4 col-lg-6"></div>
+		<div class="col-12 col-md-8 col-lg-6 pt-1 pt-md-4 pb-1 pb-md-4 border-top border-dark">
+			<div class="row">
+				<div class="col-0 col-md-2"></div>
+				<div class="col-6 col-md-6 mt-1">
+					<a class="navbar-brand fst-normal d-none d-md-inline" href="{{ .Site.Home.RelPermalink }}">{{ replace .Site.Title " " " <br/>" | safeHTML }}</a>
+				</div>
+				<div class="col-6 col-md-4  ">				        
+		            <ul class="navbar-nav flex-column w-100 mx-auto">
+		                {{ $currentPage := . }}
+		                <li class="nav-item menu-item-home ">
+		                	<a class="nav-link text-dark p-0 m-0 fs-2 " href="{{ .Site.Home.RelPermalink }}">Home{{ $current := .RelPermalink | safeURL }}
+
+			                    	{{ if eq $current .Site.Home.RelPermalink }} /{{ end }}</a>
+		                </li>
+		                {{ range .Site.Menus.main }}
+			                <li class="nav-item menu-item-{{ replace .Name " " "-" | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}"> 
+			                    <a class="nav-link text-dark p-0 m-0 fs-2 " href="{{ .URL }}" title="{{ .Name }}" target="{{ .Post }}">
+			                        
+			                        {{ .Name }}{{ $current := .URL | safeURL }}
+			                    	{{ if eq $current $currentPage.RelPermalink }} /{{ end }}
+			                    </a>                 
+			                </li>
+		                {{end}}
+		            </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+
+
+

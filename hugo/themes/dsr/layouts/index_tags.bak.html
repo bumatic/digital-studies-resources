@@ -1,0 +1,133 @@
+{{ define "title" }}{{ .Site.Title }}{{ end}}
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-home{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+  
+  <!--<div class="container py-0 py-md-2">
+  </div>-->
+  <div class="container content" >
+
+    <!-- CONTENT SECTION START -->
+    <div class="row">
+
+      {{ if .Site.Params.homepage_image }}
+        <div class="col-12 col-md-11 mx-auto my-0 p-0">  
+          <img src="{{ .Site.Params.homepage_image | relURL}}" />
+        </div>
+     {{ end }}
+
+      <div class="col-12 col-md-8 mx-auto my-4 fs-2 content">
+        <h1 class="title mt-4">{{.Title}}</h1>
+        {{ .Content}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-8 mx-auto">
+        {{ range .Site.Params.content_paths }}        
+          {{ $current := relURL . | string }}
+            {{ with $.Site.GetPage $current }}
+              <h2 class="mt-1">{{ .Title }}</h2>
+              {{ range .Pages }}
+                {{ .Render "page-summary" }}
+              {{ end }}
+            {{ end }}
+        {{end }}
+
+        
+      </div>
+    </div>    
+  </div>    
+    <!-- CONTENT SECTION END -->
+    
+    <div class="row">
+      {{ partial "filter-tags.html" . }}
+
+      <!-- CONTENTS START-->
+      <div class="col-12 col-md-9 col-lg-10 border border-dark p-0 m-0">
+        <div class="row m-0 mt-1 grid gallery" id="mix-wrapper" data-masonry='{"percentPosition": true }'>
+          
+                {{ range .Site.Pages }}
+                    {{ if .IsPage }}
+                      {{ .Render "summary-card" }}
+                    {{ else if .IsSection }}
+                      <!--{{ .Render "section-card" }}-->
+                    {{ end }}
+                    
+                {{ end }}
+        </div>
+      </div>
+      <!-- CONTENTS END-->
+    </div>
+  </div>
+  
+
+  <div class="row my-4">
+  </div>
+{{ end }}
+
+{{ define "footer_js" }}
+  
+
+  {{ $scripts := resources.Get "js/isotope.pkgd.min.js" }}
+    {{ if .Site.IsServer }}
+        <script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
+    {{ else }}
+        <script type="text/javascript" src="{{ ($scripts | minify | fingerprint).RelPermalink }}"></script>
+  {{ end }}
+
+
+  <script type="text/javascript">
+
+    // init Isotope
+    var $grid = $('.grid').masonry({itemSelector: '.grid-item'});
+
+    // store filter for each group
+    var filters = {};
+
+
+
+
+    // change is-checked class on buttons
+    $('.button-group').each( function( i, buttonGroup ) {
+      var $buttonGroup = $( buttonGroup );
+      $buttonGroup.on( 'click', 'button', function( event ) {
+        $buttonGroup.find('.active').removeClass('active');
+        var $button = $( event.currentTarget );
+        $button.addClass('active');
+      });
+    });
+      
+    // flatten object by concatting values
+    function concatValues( obj ) {
+      var value = '';
+      for ( var prop in obj ) {
+        value += obj[ prop ];
+      }
+      return value;
+    }
+
+    $('.filters').on( 'click', 'button', function( event ) {
+      var $button = $( event.currentTarget );
+      // get group key
+      var $buttonGroup = $button.parents('.button-group');
+      var filterGroup = $buttonGroup.attr('data-filter-group');
+      // set filter for group
+      filters[ filterGroup ] = $button.attr('data-filter');
+      // combine filters
+      
+      var filterValue = concatValues( filters );
+      // set filter for Isotope
+
+      console.log(filterValue);
+      console.log($(this).attr("data-filter"));
+      var a = $(".gallery").isotope({});
+      
+      a.isotope({ filter: filterValue });
+
+    });
+
+  </script>
+
+{{ end }}

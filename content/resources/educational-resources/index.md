@@ -2,7 +2,7 @@
 title: 'Educational Resources'
 type: resources
 date: 2020-10-08 15:02
-draft: false
+draft: true
 weight: 200
 summary: dm.
 ---

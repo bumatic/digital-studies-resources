@@ -1,0 +1,99 @@
+{{ define "title" }}{{ .Site.Title }}{{ end}}
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-home{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+
+
+
+{{ define "main" }}
+
+<div class="strip">
+  <div class="container pt-4 pb-16">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="title text-primary">{{ .Title | default .Site.Title }}</h1>
+        <div class="content">
+          {{ if .Content }}
+          {{ .Content }}
+          {{ else }}
+          <p>{{ .Site.Params.homepage_intro }}</p>
+          {{ end }}
+        </div>
+        <a class="button button-primary mb-2" href="{{ .Site.Params.homepage_button_link | relURL }}">
+          {{ .Site.Params.homepage_button_text }}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ if .Site.Params.homepage_image }}
+<div class="strip">
+  <div class="container pt-4 pb-4">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10">
+        <div class="terminal">
+          <img src="{{ .Site.Params.homepage_image | relURL}}" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+
+{{ if .Site.Taxonomies.tags }}
+          <div id="tag-cloud">
+            <!-- filter checkFilter-->
+            <button class="btn btn-dark filter-btn" data-filter="all">All</button>
+            {{ range $key, $values := .Site.Taxonomies.tags}}
+            <button class="btn btn-dark filter-btn" data-filter=".{{ $key }}">{{ $tagpage := $.Site.GetPage $key }}{{ $tagpage.Title }}</button>
+            {{ end }}
+          </div>
+{{ end }}
+
+
+<div id="mix-wrapper" class="row clearfix" data-masonry='{"percentPosition": true }'>
+  
+  {{ range .Site.Pages }}
+      {{ if .IsPage }}
+        {{ .Render "summary-card" }}
+      {{ else if .IsSection }}
+        {{ .Render "section-card" }}
+      {{ end }}
+      
+  {{ end }}
+</div>
+
+{{ end }}
+
+{{ define "footer_js" }}
+  {{ $scripts := resources.Get "js/mixitup.min.js" }}
+    {{ if .Site.IsServer }}
+        <script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
+    {{ else }}
+        <script type="text/javascript" src="{{ ($scripts | minify | fingerprint).RelPermalink }}"></script>
+  {{ end }}
+
+
+  <script>
+    mixitup('#mix-wrapper', {
+      /*load: {
+        
+      },*/
+      /*animation: {
+        effects: 'fade rotateZ(-180deg)', 
+        duration: 700 
+      },*/
+      classNames: {
+        block: 'programs', /* mixitup */
+        elementFilter: 'filter-btn', /* control */
+        elementSort: 'sort-btn' /* control */
+      },
+      selectors: {
+        target: '.mix-target' /* .mix */
+      }
+    });
+  </script>
+{{ end }}

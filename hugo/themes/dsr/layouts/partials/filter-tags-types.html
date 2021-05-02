@@ -1,0 +1,27 @@
+<!-- FILTERS START-->
+<div class="col-12 col-md-3 col-lg-2 border border-dark p-2">
+  <div class="card border-0 text-primary mx-1 mx-lg-0">
+      <div class="filters">
+        <div class="button-group ms-2" data-filter-group="types">
+          <h4 class="mt-3">Content Types</h4>
+              {{ range .Site.Sections }}
+                <button class="btn btn-sm btn-dark filter-btn my-1" data-filter=".{{ .Title | urlize }}">{{ .Title }}</button>
+              {{end}}
+              
+              <button class="btn btn-sm btn-secondary filter-btn active my-1" data-filter="*">All</button>
+        </div>
+        {{ if .Site.Taxonomies.tags }}
+          <div class="button-group ms-2" data-filter-group="tags">
+            <h4 class="mt-2 ">Topics</h4>
+            <!-- filter checkFilter-->
+            
+            {{ range $key, $values := .Site.Taxonomies.tags}}
+            <button class="btn btn-sm btn-dark filter-btn my-1" data-filter=".{{ $key }}">{{ $tagpage := $.Site.GetPage $key }}{{ $tagpage.Title }}</button>
+            {{ end }}
+            <button class="btn btn-sm btn-secondary filter-btn active my-1" data-filter="*">All</button>
+          </div>
+        {{ end }}
+      </div>
+  </div>
+</div>
+<!-- FILTERS END-->

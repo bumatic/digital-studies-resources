@@ -1,71 +1,102 @@
-languageCode = "en-us"
-title = "Digital Studies"
-
 baseURL = "/"
+languageCode = "en-us"
+title = "Digital Studies Resources" #"Digital Studies Resources"
 themesDir = "themes"
-theme = "hugo-whisper-theme"
+theme = "dsr"
 
 
-pygmentsCodeFences = true
-pygmentsCodefencesGuessSyntax = true
-pygmentsUseClasses = true
+[[menu.main]]
+    name = "Github"
+    url = "https://github.com/bumatic/digital-studies-resources"
+    weight = 1
+    post = "_blank"
+
+[[menu.content]]
+    name = "Resources and Tools"
+    url = "resources"
+    weight = 1
+
+[taxonomies]
+  tag = "tags"
+
+
+#theme = "hugo-whisper-theme"
+
+
+
+#pygmentsCodeFences = true
+#pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClasses = true
 
 # Controls how many words are printed in the content summary on the docs homepage.
 # See https://gohugo.io/content-management/summaries/
 summaryLength = 30
 
-[[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-
-[[menu.main]]
-#    name = "Resources"
-#    url = "/resources"
-#    weight = 2
-
-[[menu.main]]
-    name = "Github"
-    url = "https://github.com/bumatic/digital-studies-resources"
-    weight = 3
-    post = "_blank"
 
     
-[markup]
-  [markup.tableOfContents]
-    startLevel = 2    
-    endLevel = -1
-    ordered = false
+#[markup]
+#  [markup.tableOfContents]
+#   startLevel = 2    
+#    endLevel = -1
+#    ordered = false
     
+
+#[[menu.main]]
+#    name = "Twitter"
+#    url = "https://www.twitter.com/bumatic/"
+#   weight = 2
+
+
+
 
 [params]
-  google_analytics_id=""
-  homepage_button_link = '/resources'
-  homepage_button_text = 'Go to Resources'
-  homepage_intro = ''
-  #homepage_image = '/images/terminal.gif'
-
-  # (Optional, default docs) Specify root page to render child pages as menu.
-  # Page is resolved by .GetPage function: https://gohugo.io/functions/getpage/
-  # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
-  Section = '/content/'
-
-  GithubRepo = "github.com/bumatic/digital-studies-resources"
-
-  ## You can enable to add anchor links to header elements
-  # enable_anchor_link = true
+  debug = false
+  #logo = "/img/np_jar_1086705_FF11DD.svg"
+  #google_analytics_id=""
+  #homepage_button_link = '/resources'
+  #homepage_button_text = 'Go to Resources'
+  #homepage_intro = ''
+  homepage_image = '/images/Digital-Studies-Resources-MindMap.svg'
+  content_paths =  ["resources", "topics"]
 
   [params.homepage_meta_tags]
-    #meta_description = "Hugo Whisper is a documentation theme built with Hugo."
-    #meta_og_title = "Hugo Whisper Theme"
-    #meta_og_type = "website"
-    #meta_og_url = "https://hugo-whisper.netlify.app"
+    meta_description = "Bootmatic.Bootmatic.Bootmatic.Bootmatic.Bootmatic.Bootmatic."
+    meta_og_title = "Digital Studies Resources"
+    meta_og_type = "Website"
+    meta_og_url = "https://digital-studies.xyz"
     #meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-whisper-theme/master/images/tn.png"
-    #meta_og_description = "Hugo Whisper is a documentation theme built with Hugo."
-    meta_twitter_card = "summary"
-    meta_twitter_site = "@bumatic"
-    meta_twitter_creator = "@bumatic"
+    #meta_og_description = "Bootmatic.Bootmatic.Bootmatic.Bootmatic.Bootmatic.Bootmatic."
+    #meta_twitter_card = "summary"
+    #meta_twitter_site = "@bumatic"
+    #meta_twitter_creator = "@bumatic"
 
-  [params.logo]
-      mobile = "logo.svg"
-      standard  = "logo.svg"
+  #[params.logo]
+  #  mobile = "/img/np_jar_1086705_FF11DD.svg"
+  #  standard  = "/img/np_jar_1086705_FF11DD.svg"
+
+
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "github"
+    tabWidth = 4
+
+
+
+
+
+
+
+
+
+
+

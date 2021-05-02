@@ -1,0 +1,40 @@
+
+
+
+
+<aside class="col-12 col-md-3 col-xl-2 p-0 bg-dark flex-shrink-1">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark flex-md-column flex-row align-items-center py-2 text-md-center sticky-top" id="sidebar">
+        <div class="w-50 ">
+            <div class="row">
+                <div class="col-3 col-md-12 my-auto">
+                    <a href="{{ $.Site.BaseURL }}"><img src="{{ .Site.Params.logo | relURL }}" alt="Logo" class="img-fluid bg-transparent border-0 ms-4 my-md-4 ms-md-0"></a>
+                </div>
+
+                <div class="col-9 col-md-12 my-auto">
+                    <a href="{{ $.Site.BaseURL }}" class="navbar-brand font-weight-bold text-nowrap mx-auto">
+                        <span class="fs-3 d-none d-md-inline">Bootmatic</span>
+                        <span class="fs-5 ms-3 d-inline d-md-none">Bootmatic</span>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="navbar-toggler border-0 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav-menu" aria-controls="main-nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-uppercase w-100 text-center" id="main-nav-menu">
+            <ul class="navbar-nav flex-column w-100 mx-auto">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                <li class="nav-item menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}"> 
+                    <a class="nav-link" href="{{ .URL }}" title="{{ .Name }}">
+                        {{ .Name }}
+                    </a>
+                </li>
+                {{end}}
+            </ul>
+        </div>
+    </nav>
+</aside>

@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+// 'Noto Sans JP', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+//'PT Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+//'Press Start 2P', cursive; 
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+// 'Merriweather', serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+//'Source Code Pro', monospace;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+//'Source Sans Pro', sans-serif; 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap');
+//'Montserrat', sans-serif;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+//'Open Sans', sans-serif;
+
+$headings-font-family: 'Montserrat', sans-serif; 
+//$headings-color: #000000;
+$font-family-base: 'Open Sans', sans-serif;
+
+$primary: #FF11DD;
+$dark: #111111;
+$font-size-base: 1rem !default; 
+
+// headings
+//$headings-margin-bottom:      1.5rem !default;
+
+$h1-font-size:                $font-size-base * 1.75 !default;
+$h2-font-size:                $font-size-base * 1.5 !default;
+$h3-font-size:                $font-size-base * 1.25 !default;
+$h4-font-size:                $font-size-base * 1 !default;
+$h5-font-size:                $font-size-base * 0.75 !default;
+$h6-font-size:                $font-size-base * 0.75!default;
+
+$navbar-brand-font-size: 	  $font-size-base;
+
+$card-border-radius: 0;
+
+@import "bootstrap/bootstrap";
+
+%heading {
+  margin-top: 3rem; // 1
+  margin-bottom: 1rem !important;
+}
+
+h1:first-of-type {
+  margin-top: 1rem;
+}
+
+$list-inline-padding: .5rem;
+
+h1:first-of-type, h1+h2, h2+h3, h2+h4, h3+h4, h4+h5, h5+h6 {
+  margin-top: 0;
+}
+
+ol,
+ul {
+  //padding-left: 1.25rem;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+.navbar {
+  font-family: 'Montserrat', sans-serif !important; 
+  font-weight: 400 !important;
+}
+
+.highlight pre {
+	background-color: #f8f9fa !important;
+}
+
+a:hover {
+	color: $gray-100 !important;
+	background-color: $dark;
+}
+
+.content {
+	a {
+		color: $gray-800;
+		text-decoration: none;
+		font-weight: inherit !important; //600 !important;
+	}
+	blockquote {
+	    margin: 20px 0;
+	    padding: 0 14px;
+	    border-inline-start: 3px solid black;
+	}
+}
+
+.footer {
+	a {
+		color: $gray-100 !important;
+		text-decoration: none !important;
+		font-weight: bold !important; //600 !important;
+	}
+}
+
+.sidebar {
+	span.dk {
+		color: $gray-100 !important;
+		background-color: $dark !important;
+
+	}
+	a {
+		color: $gray-100 !important;
+		background-color: $dark !important;
+		text-decoration: none;
+		font-weight: inherit !important; //600 !important;
+	}
+
+	a:hover {
+	color: $gray-800 !important;
+	background-color: #222 !important;
+
+	}
+}
+
+.card {
+	%heading {
+ 		margin-top: 0.5rem; // 1
+  		margin-bottom: 0.5rem !important;
+	}
+	h1 {
+		font-size: $font-size-base*1.25 !important;
+		line-height: 1.75rem;
+	}
+}

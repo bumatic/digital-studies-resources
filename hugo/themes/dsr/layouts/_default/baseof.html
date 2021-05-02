@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    {{ partial "head.html" . }}
+
+    <body class='page {{ block "body_classes" . }}{{ end }} bg-light'>
+        
+         
+
+        {{ partial "header.html" . }}
+         
+        <div class="container"> <!--<div class="container-fluid">-->
+            {{ block "main" . }}
+            {{ end }}
+        </div>
+
+
+        {{ partial "to-top.html" }}{{ partial "to-top.html" }}
+        {{ partial "footer.html" . }}
+        
+        
+        {{ $scripts := resources.Get "js/bootstrap.bundle.min.js" }}
+        {{ if .Site.IsServer }}
+            <script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
+        {{ else }}
+            <script type="text/javascript" src="{{ ($scripts | minify | fingerprint).RelPermalink }}"></script>
+        {{ end }}
+
+        {{ $scripts := resources.Get "js/jquery-3.6.0.min.js" }}
+        {{ if .Site.IsServer }}
+            <script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
+        {{ else }}
+            <script type="text/javascript" src="{{ ($scripts | minify | fingerprint).RelPermalink }}"></script>
+        {{ end }}
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+        
+        {{ block "footer_js" . }}{{ end }}
+
+        
+
+
+    </body>
+</html>

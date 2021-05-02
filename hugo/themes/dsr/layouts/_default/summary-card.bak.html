@@ -1,0 +1,27 @@
+{{ define "tag_classes" }}.all {{.CurrentSection.Title | urlize}} {{ range .Params.tags }}{{ . | urlize }} {{ end }}{{ end }}
+
+
+<div class='col-12 col-sm-6 col-lg-4 col-xl-3 p-1 grid-item mix-target {{ block "tag_classes" . }}{{ end }}'>
+	<div class="card border-5 border-dark">
+		<p></p>
+		{{ if .Params.image }}
+  			<img class="card-image-top" alt="{{ .Title }}" src="{{ .Params.image | relURL }}" />
+  		{{ end}}
+	  <div class="card-body">
+	    <h5 class="card-title">{{ .Title }}</h5>
+	    
+	    {{ if .Params.subtitle }}
+		    <h6 class="card-subtitle mb-2 text-muted">{{ .Params.subtitle }}</h6>
+		{{ end }}
+
+		{{ range .Params.tags }}
+			<p>{{ . | urlize }}</p>
+		{{ end }}
+
+	    <p class="card-text">{{ .Summary }}</p>
+	    <div class="justify-content-end d-grid gap-2 d-flex justify-content-end">
+	    	<a href="{{ .Permalink }}" class="btn btn-dark stretched-link"></a>
+	    </div>	
+	  </div>
+	</div>
+</div>

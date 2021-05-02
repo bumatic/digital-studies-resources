@@ -1,0 +1,34 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-default-single{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+<div class="container-fluid clearfix pt-2 pb-2 mb-4 content" >
+    <!-- CONTENT SECTION START -->
+    <div class="row">
+      <div class="col-11 col-md-12 col-lg-10 col-xl-10 border border-dark border-0 m-0 p-0 mx-auto">
+          <div class="container content m-0 p-0">
+            <div class="row">
+              
+              <div class="d-block d-md-none col-md-4 col-lg-3 col-xl-3 border border-sm-1 border-md-0 border-dark py-3 mx-2">{{ partial "menu-sidebar-small.html" . }}</div>
+              <div class="d-block d-md-none mb-4"></div>
+
+              <div class="d-none d-md-block col-md-4 col-lg-3 col-xl-3 mt-0 py-2">{{ partial "menu-sidebar.html" . }}</div>
+              <div class="col-md-8 col-xl-9 col-xl-8 border-0 border-dark">
+                <h1 class="title">{{.Title}}</h1>
+                {{ .Content }}
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- CONTENT SECTION END -->
+</div>
+
+
+
+{{ end }}
+
+
+

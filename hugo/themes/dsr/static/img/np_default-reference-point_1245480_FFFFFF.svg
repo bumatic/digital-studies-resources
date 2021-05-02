@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg fill="#FFFFFF" width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2">
+  <path transform="scale(1.5625)" d="m1 1h12v12h-12z"/>
+  <path transform="scale(1.5625)" d="m51 1h12v12h-12z"/>
+  <path transform="scale(1.5625)" d="m26 1h12v12h-12z"/>
+  <path transform="scale(1.5625)" d="m26 26h12v12h-12z"/>
+  <path transform="scale(1.5625)" d="m51 26h12v12h-12z"/>
+  <path transform="scale(1.5625)" d="m1 26h12v12h-12z"/>
+  <path transform="scale(1.5625)" d="m1 51h12v12h-12z"/>
+  <path transform="scale(1.5625)" d="m51 51h12v12h-12z"/>
+  <path transform="scale(1.5625)" d="m26 51h12v12h-12z"/>
+  <path transform="scale(1.5625)" d="m57 26v-13h-6v-6h-13v6h-12v-6h-13v6h-6v13h6v12h-6v13h6v6h13v-6h12v6h13v-6h6v-13h-6v-12z"/>
+ </g>
+</svg>
