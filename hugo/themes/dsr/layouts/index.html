@@ -50,64 +50,6 @@
 {{ define "footer_js" }}
   
 
-  {{ $scripts := resources.Get "js/isotope.pkgd.min.js" }}
-    {{ if .Site.IsServer }}
-        <script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
-    {{ else }}
-        <script type="text/javascript" src="{{ ($scripts | minify | fingerprint).RelPermalink }}"></script>
-  {{ end }}
-
-
-  <script type="text/javascript">
-
-    // init Isotope
-    var $grid = $('.grid').masonry({itemSelector: '.grid-item'});
-
-    // store filter for each group
-    var filters = {};
-
-
-
-
-    // change is-checked class on buttons
-    $('.button-group').each( function( i, buttonGroup ) {
-      var $buttonGroup = $( buttonGroup );
-      $buttonGroup.on( 'click', 'button', function( event ) {
-        $buttonGroup.find('.active').removeClass('active');
-        var $button = $( event.currentTarget );
-        $button.addClass('active');
-      });
-    });
-      
-    // flatten object by concatting values
-    function concatValues( obj ) {
-      var value = '';
-      for ( var prop in obj ) {
-        value += obj[ prop ];
-      }
-      return value;
-    }
-
-    $('.filters').on( 'click', 'button', function( event ) {
-      var $button = $( event.currentTarget );
-      // get group key
-      var $buttonGroup = $button.parents('.button-group');
-      var filterGroup = $buttonGroup.attr('data-filter-group');
-      // set filter for group
-      filters[ filterGroup ] = $button.attr('data-filter');
-      // combine filters
-      
-      var filterValue = concatValues( filters );
-      // set filter for Isotope
-
-      console.log(filterValue);
-      console.log($(this).attr("data-filter"));
-      var a = $(".gallery").isotope({});
-      
-      a.isotope({ filter: filterValue });
-
-    });
-
-  </script>
+  
 
 {{ end }}

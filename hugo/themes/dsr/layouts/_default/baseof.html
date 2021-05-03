@@ -1,23 +1,27 @@
+{{ define "footer_js" }}{{ end }}
+
 <!DOCTYPE html>
 <html>
     {{ partial "head.html" . }}
 
     <body class='page {{ block "body_classes" . }}{{ end }} bg-light'>
         
-         
-
+        
         {{ partial "header.html" . }}
-         
-        <div class="container"> <!--<div class="container-fluid">-->
-            {{ block "main" . }}
-            {{ end }}
-        </div>
+             
+        <main class="min-vh-100">
+            <div class="container"> <!--<div class="container-fluid">-->
+                {{ block "main" . }}
+                {{ end }}
+            </div>
+        </main>
 
-
-        {{ partial "to-top.html" }}{{ partial "to-top.html" }}
+        {{ partial "to-top.html" }}
         {{ partial "footer.html" . }}
         
-        
+
+        <!-- Include JS Resources  -->
+        <!-- Bootstrap  -->
         {{ $scripts := resources.Get "js/bootstrap.bundle.min.js" }}
         {{ if .Site.IsServer }}
             <script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
@@ -25,20 +29,74 @@
             <script type="text/javascript" src="{{ ($scripts | minify | fingerprint).RelPermalink }}"></script>
         {{ end }}
 
+        <!-- jquery  -->
         {{ $scripts := resources.Get "js/jquery-3.6.0.min.js" }}
         {{ if .Site.IsServer }}
             <script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
         {{ else }}
             <script type="text/javascript" src="{{ ($scripts | minify | fingerprint).RelPermalink }}"></script>
         {{ end }}
-
+        <!-- Masonry  -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-
         
-        {{ block "footer_js" . }}{{ end }}
+        {{ $scripts := resources.Get "js/isotope.pkgd.min.js" }}
+        {{ if .Site.IsServer }}
+            <script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
+        {{ else }}
+            <script type="text/javascript" src="{{ ($scripts | minify | fingerprint).RelPermalink }}"></script>
+        {{ end }}
 
-        
 
+        <script type="text/javascript">
+
+            // init Isotope
+            var $grid = $('.grid').masonry({itemSelector: '.grid-item'});
+
+            // store filter for each group
+            var filters = {};
+
+            // change is-checked class on buttons
+            $('.button-group').each( function( i, buttonGroup ) {
+              var $buttonGroup = $( buttonGroup );
+              $buttonGroup.on( 'click', 'button', function( event ) {
+                $buttonGroup.find('.active').removeClass('active');
+                var $button = $( event.currentTarget );
+                $button.addClass('active');
+              });
+            });
+              
+            // flatten object by concatting values
+            function concatValues( obj ) {
+              var value = '';
+              for ( var prop in obj ) {
+                value += obj[ prop ];
+              }
+              return value;
+            }
+
+            $('.filters').on( 'click', 'button', function( event ) {
+              var $button = $( event.currentTarget );
+              // get group key
+              var $buttonGroup = $button.parents('.button-group');
+              var filterGroup = $buttonGroup.attr('data-filter-group');
+              // set filter for group
+              filters[ filterGroup ] = $button.attr('data-filter');
+              // combine filters
+              
+              var filterValue = concatValues( filters );
+              // set filter for Isotope
+
+              console.log(filterValue);
+              console.log($(this).attr("data-filter"));
+              var a = $(".gallery").isotope({});
+              
+              a.isotope({ filter: filterValue });
+
+            });
+
+          </script>
+
+        {{ block "footer_js" . }}{{ end }}        
 
     </body>
 </html>
