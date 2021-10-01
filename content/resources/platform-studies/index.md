@@ -45,4 +45,25 @@ For retrieving data from relevant groups and channels one make use of the Telegr
 
 ### Github
 
-/TO DO: Resources need to be added/
+GitHub is a platform for developing, managing and publishing software projects. Since GitHub provides an infrastructure for open as well as closed distributed collaboration, it is used for other non-software-related purposes as well. Following the platforms own branding GitHub is “[w]here the world builds software” ([GitHub n.d.](https://github.com)). 
+
+#### Retrieving Platform Data
+
+The main resource for collecing data of this platform is the officical [GitHub REST API](https://docs.github.com/en/rest). For retrieving data from the API one has to create a GitHub user account and create an API access token. 
+
+- [Digital Methods Initiative](https://wiki.digitalmethods.net/Dmi/ToolDatabase?cat=DeviceCentric&subcat=Github) published a number of tools on their website that provide an easy to use interface for collecting selected data via the API. 
+- A Google Collaboratory based tool/interface for easily collecting a broader variety of platform data via the GitHub API and storing it in ones own Google Drive can be found [here]()
+
+Besides the official API a number of other sources for GitHub data exist
+
+- [GitHub Archive](https://www.gharchive.org/) collects data of platform events and publishes them in JSON format.
+	- This dataset is vast and using it requires rather extensive computing capabilities. However, the dataset is accessible via Google BigQuery as well.
+- [GitHub Torrent](https://ghtorrent.org) is “an effort to create a scalable, queriable, offline mirror of data offered through the Github REST API”. The project publishes MySQL as well as MongoDB database dumps of platform events.
+
+
+#### Analyzing Platform Data
+
+- [Mining GitHub: Inspecting Software Collaboration Habits, Building Interest Graphs, and More](https://www.oreilly.com/library/view/mining-the-social/9781449368180/ch07.html)
+- [What can we learn from our GitHub stars?](https://www.cockroachlabs.com/blog/what-can-we-learn-from-our-github-stars/)
+- [Analysing C# code on GitHub with BigQuery](http://mattwarren.org/2017/10/12/Analysing-C-code-on-GitHub-with-BigQuery/)
+- [We analyzed the GitHub Issues from the most popular Front-End frameworks, here’s what we found Using unsupervised AI to discover insights](https://building.lang.ai/we-analyzed-the-github-issues-from-the-most-popular-front-end-frameworks-heres-what-we-found-c3491b26ec95)
