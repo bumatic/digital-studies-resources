@@ -1,12 +1,20 @@
 ---
-title: 'Further Historical Source Code Releases @ CHM'
-date: 2021-05-02
-toc: true
+title: "Further Resources"
+description: "This page lists tools and resources fo the digital stuy of digital cultures."
+summary: ""
+date: 2023-09-07T16:12:03+02:00
+lastmod: 2024-09-07T16:12:03+02:00
 draft: false
-weight: 60
-summary: 
+weight: 100
+toc: true
+seo:
+  title: "Further Resources" # custom title (optional)
+  description: "This page lists tools and resources fo the digital stuy of digital cultures."
+  canonical: "" # custom canonical URL (optional)
+  robots: "" # custom robot tags (optional)
 ---
 
+## Historical Source Code Releases @ CHM
 
 - [MacPaint and QuickDraw Source Code \| @CHM Blog | Computer History Museum](https://www.computerhistory.org/atchm/macpaint-and-quickdraw-source-code/)
 - [The APL Programming Language Source Code \| @CHM Blog | Computer History Museum](https://www.computerhistory.org/atchm/the-apl-programming-language-source-code/)
